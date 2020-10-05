@@ -3,6 +3,7 @@ name: Laboratorio 1 Imperativa Algo 1 UNC
 locale: es
 type: practice
 beta: false
+teacher_info: ''
 language: c
 id_format: "%05d"
 order: []

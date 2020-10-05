@@ -1,1 +1,15 @@
-TO-DO
+Programas como transformadores de estados
+
+El objetivo de este proyecto es introducir los siguientes:
+-el concepto de estado y de programas como transformadores de estado;
+-el modelo computacional imperativo, y sus diferencias con el modelo funcional;
+-la implementación en lenguaje "C" de programas imperativos vistos en el teórico-práctico
+
+Para recordar se compila así (siendo miarchivo.c el codigo que escribí, y miprograma el ejecutable que me va a generar)
+$> gcc -Wall -Wextra -std miarchivo.c -o miprograma
+Luego para ejecutarlo
+$>./miprograma
+
+Para compilar para gdb, agregar el flag -g al momento de compilar el .c escribir en la terminal 
+$> gcc -Wall -Wextra -std -g miarchivo.c -o miprograma
+
