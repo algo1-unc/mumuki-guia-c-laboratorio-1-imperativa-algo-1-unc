@@ -1,0 +1,5 @@
+Copyright Romina Altamirano and contributors
+
+This content consists of voluntary contributions made by many
+individuals. For exact contribution history, see its revision history
+available at https://github.com/algo1-unc/mumuki-guia-c-laboratorio-1-imperativa-algo-1-unc and the AUTHORS.txt file.
