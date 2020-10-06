@@ -1,5 +1,5 @@
 ---
-name: Laboratorio 1 Imperativa Algo 1 UNC
+name: Laboratorio 1 Imperativa Algoritmos 1 UNC
 locale: es
 type: practice
 beta: false
@@ -8,4 +8,5 @@ language: c
 id_format: "%05d"
 order:
 - 1
+- 2
 private: false
