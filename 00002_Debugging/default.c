@@ -1,36 +1,25 @@
-// Funciones de recuperaciń de estados hayados
-... getX(void) {
-  return ...;
-}
-
-... getY(void) {
-  return ...;
-}
-
-... getZ(void) {
-  return ...;
-}
-
-... getB(void) {
-  return ...;
-}
-
-... getW(void) {
-  return ...;
-}
+// Constantes 
+#define X_VAR ... 
+#define Y_VAR ...
+#define Z_VAR ...
+#define B_VAR ...
+#define W_VAR ...
 
 // Funciones para la evaluación de las expresiones
-... exp1(...) {
-  int x = getX(); 
+bool exp1(void) {
+  int x = X_VAR; 
   return ...;
 }
 
-... exp2(...) {
-  int x, y, z = getX(), getY(), getZ();
+bool exp2(void) {
+  int x = X_VAR;
+  int y = Y_VAR;
+  int z = Z_VAR;
   return ...;
 }
 
-... exp3(...) {
-  bool b, w = getB(), getW();
+bool exp3(void) {
+  bool b = B_VAR;
+  bool w = W_VAR;
   return ...;
 }

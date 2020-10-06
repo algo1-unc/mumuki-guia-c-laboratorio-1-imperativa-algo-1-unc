@@ -1,9 +1,4 @@
-describe ("Test para estado (x,y,z,b,w)") {
-  int x = getX();
-  int y = getY();
-  int z = getZ();
-  bool b = getB();
-  bool w = getW();
+describe ("Test para estado (X,Y,X,B,W)") {
   
   it ("exp1: (x % 4 == 0)") {
     should_bool(exp1()) be equal to(true);
