@@ -11,7 +11,7 @@ describe ("Test de estado (x,y,z)") {
   } end
   
   it ("exp3: (y - 2 = (x * 3 + 1) % 5)") {
-    should_int(exp3()) be equal to(my_exp3(X_VAR,Y_VAR));
+    should_bool(exp3()) be equal to(my_exp3(X_VAR,Y_VAR));
   } end
   
   it ("exp4: (y / 2 * x)") {
@@ -19,6 +19,6 @@ describe ("Test de estado (x,y,z)") {
   } end
   
   it ("exp5: (y < x * z)") {
-    should_int(exp5()) be equal to(my_exp5(X_VAR,Y_VAR,Z_VAR));
+    should_bool(exp5()) be equal to(my_exp5(X_VAR,Y_VAR,Z_VAR));
   } end
 } end
