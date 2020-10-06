@@ -6,20 +6,20 @@
 #define W_VAR ...
 
 // Funciones para la evaluación de las expresiones
-bool exp1(void) {
+... exp1(...) {
   int x = X_VAR; 
   return ...;
 }
 
-bool exp2(void) {
-  int x = X_VAR;
-  int y = Y_VAR;
-  int z = Z_VAR;
+... exp2(...) {
+  ... x = X_VAR;
+  ... y = Y_VAR;
+  ... z = Z_VAR;
   return ...;
 }
 
-bool exp3(void) {
-  bool b = B_VAR;
-  bool w = W_VAR;
+... exp3(...) {
+  ... b = B_VAR;
+  ... w = W_VAR;
   return ...;
 }

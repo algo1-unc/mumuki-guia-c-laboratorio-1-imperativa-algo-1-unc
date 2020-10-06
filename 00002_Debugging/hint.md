@@ -1,1 +1,1 @@
-:eyes: **Recuerda** cuales son los tipos correctos de retorno de cada función programada :eyes:.
+:eyes: **Recuerda** cuales son los tipos correctos de retorno de cada función programada y variable asignada!! :eyes:.
