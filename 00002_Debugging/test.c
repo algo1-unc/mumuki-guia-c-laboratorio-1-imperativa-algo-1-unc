@@ -1,5 +1,3 @@
-/*...extra...*/
-
 describe ("Test para estado (x,y,z,b,w)") {
   int x = getX();
   int y = getY();
@@ -16,7 +14,7 @@ describe ("Test para estado (x,y,z,b,w)") {
   } end
   
   it ("exp3: (not b && w)") {
-    should_bool(exp3()) be equal to(true);
+    should_bool(exp3()) be equal to(false);
   } end
   
 } end
