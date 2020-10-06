@@ -1,5 +1,3 @@
-#include <stdbool.h>
-
 // Funciones de recuperaciń de estados hayados
 ... getX(void) {
   return ...;
