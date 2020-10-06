@@ -1,7 +1,11 @@
 /*...extra...*/
 
 describe ("Test de estado (x,y,z)") {
-  
+  before {
+    puts("Init X");
+    puts(X_VAR);
+  } end
+
   it ("exp1: (x + y + 1)") {
     should_int(exp1()) be equal to(my_exp1(X_VAR,Y_VAR));
   } end
