@@ -1,8 +1,3 @@
-
-#include <stdio.h>
-#include <stdbool.h>
-
-
 int my_exp1(int x, int y, int z) {
     return x + y + 1;
 }
