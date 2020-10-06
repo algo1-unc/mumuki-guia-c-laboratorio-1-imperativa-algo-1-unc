@@ -1,5 +1,5 @@
 describe ("Descripción del grupo") {
-  it ("Descripción del ejemplo") {
-    should_bool(true) be equal to(true);
+  it ("Estado 1") {
+    estado1() be equal ;
   } end
 } end
