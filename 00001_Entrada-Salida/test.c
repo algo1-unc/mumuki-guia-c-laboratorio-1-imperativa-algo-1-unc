@@ -19,6 +19,6 @@ describe ("Test de estado (x,y,z)") {
   } end
   
   it ("exp5: (y < x * z)") {
-    should_int(exp5(x,y,z)) be equal to(my_exp5(X_VAR,Y_VAR,Z_VAR));
+    should_int(exp5()) be equal to(my_exp5(X_VAR,Y_VAR,Z_VAR));
   } end
 } end
