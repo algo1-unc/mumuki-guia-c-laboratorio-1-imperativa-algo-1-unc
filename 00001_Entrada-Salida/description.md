@@ -11,15 +11,4 @@ Codifique las respectivas funciones en C, para que puedan ser evaluadas en los e
 >* Estado1: **(x->7, y->3, z->5)** 
 * Estado2: **(x->1, y->10, z->8)**
 
-utilizando la siguiente sintaxis:
-
-```C
-... exp1(...) {
-  /*
-    Input: Estado (x,y,z).
-    Output: Evaluación de expresión "x + y + 1".
-  */
-  
-  return ...;
-}
-```
+> **NOTA:** No modifique el nombre de las funciones de la plantilla presentada.
