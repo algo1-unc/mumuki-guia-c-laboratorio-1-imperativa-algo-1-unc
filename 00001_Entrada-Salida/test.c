@@ -3,7 +3,10 @@
 describe ("Test de estado (x,y,z)") {
   before {
     puts("Init X");
-    puts(X_VAR);
+  } end
+  
+  after {
+    puts("after 3");
   } end
 
   it ("exp1: (x + y + 1)") {
