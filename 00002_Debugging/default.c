@@ -1,37 +1,38 @@
-int getX(void) {
+#include <stdbool.h>
+
+// Funciones de recuperaciń de estados hayados
+... getX(void) {
   return ...;
 }
 
-int getY(void) {
+... getY(void) {
   return ...;
 }
 
-int getZ(void) {
+... getZ(void) {
   return ...;
 }
 
-int getB(void) {
+... getB(void) {
   return ...;
 }
 
-int getW(void) {
+... getW(void) {
   return ...;
 }
 
+// Funciones para la evaluación de las expresiones
 ... exp1(...) {
   int x = getX(); 
-  /*CODIO AQUI*/
   return ...;
 }
 
 ... exp2(...) {
   int x, y, z = getX(), getY(), getZ();
-  /*CODIO AQUI*/
   return ...;
 }
 
 ... exp3(...) {
-  int b, w = getB(), getW();
-  /*CODIO AQUI*/
+  bool b, w = getB(), getW();
   return ...;
 }
