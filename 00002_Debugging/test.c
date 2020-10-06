@@ -1,4 +1,4 @@
-/*...extra...*//*...content...*/
+/*...extra...*/
 
 describe ("Test para estado (x,y,z,b,w)") {
   int x = getX();
