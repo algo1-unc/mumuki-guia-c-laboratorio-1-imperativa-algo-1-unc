@@ -15,7 +15,7 @@ describe ("Test de estado (x,y,z)") {
   bool outb = my_exp3(X_VAR,Y_VAR);
   printf("Resultado final %d", outb);
   it ("exp3: (y - 2 = (x * 3 + 1) % 5)") {
-    should_bool(exp3()) be equal to(out);
+    should_bool(exp3()) be equal to(outb);
   } end
   
   outi = my_exp4(X_VAR,Y_VAR);
