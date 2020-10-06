@@ -1,5 +1,7 @@
 int my_exp1(int x, int y) {
-    return x + y + 1;
+    int res = x + y + 1;
+    printf("%d", res)
+    return res;
 }
 
 int my_exp2(int x, int y, int z) {
