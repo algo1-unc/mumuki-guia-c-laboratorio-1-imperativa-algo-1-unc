@@ -14,4 +14,4 @@ Codifique las respectivas funciones en C, para que puedan ser evaluadas en los e
 
 **NOTA:** No modifique el nombre de las funciones de la plantilla presentada.
 
-> **IMPORTANTE:** Si quiere probar las funciones y debugear sus resultados, setea la `DEBUG true`
+> **IMPORTANTE:** Si quiere probar las funciones y debugear sus resultados, setea `DEBUG true`.
