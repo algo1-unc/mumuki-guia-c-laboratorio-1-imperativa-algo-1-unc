@@ -1,15 +1,20 @@
-describe ("Test para estado (X,Y,X,B,W)") {
+/*...extra...*/
+
+describe (genState(X_VAR, Y_VAR, Z_VAR, B_VAR, W_VAR)) {
   
-  it ("exp1 debe ser True") {
-    should_bool(exp1()) be equal to(true);
+  bool expected1 = true;
+  it (genBoolMsg("exp1", expected1, exp1())) {
+    should_bool(exp1()) be equal to(expected1);
   } end
   
-  it ("exp2 debe ser True") {
-    should_bool(exp2()) be equal to(true);
+  bool expected2 = true;
+  it (genBoolMsg("exp2", expected2, exp2())) {
+    should_bool(exp2()) be equal to(expected2);
   } end
   
-  it ("exp3 debe ser False") {
-    should_bool(exp3()) be equal to(false);
+  bool expected3 = false;
+  it (genBoolMsg("exp3", expected3, exp3())) {
+    should_bool(exp3()) be equal to(expected3);
   } end
   
 } end

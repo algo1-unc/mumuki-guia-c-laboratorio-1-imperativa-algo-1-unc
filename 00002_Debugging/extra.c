@@ -2,7 +2,20 @@
 #include <stdbool.h>
 #include <string.h>
 
+
 // Funciones para generar mensaje de test
+
+char* genState(const int x, const int y, const int z, const bool b, const bool w) {
+    /*
+        Formatea string con valores de estados pasados
+    */
+    
+    char* message;
+    asprintf(&message, "Test para estado (x->%d, y->%d, z->%d, b->%s, w->%s)",
+        x,y,z, b ? "true" : "false", w ? "true" : "false");
+    return message;
+}
+
 char* genIntMsg(const char* function_name , const int val_expected, const int val_returned) {
     /*
         Toma el nombre de la funcion y el valor de resultado esperado (Int), 
@@ -25,33 +38,3 @@ char* genBoolMsg(const char* function_name , const bool val_expected, const bool
         function_name, val_expected ? "true" : "false", val_returned ? "true" : "false");
     return message;
 }
-
-
-// Funciones para testeo de ejercicio
-
-int my_exp1(int x, int y) {
-    int res = x + y + 1;
-    return res;
-}
-
-int my_exp2(int x, int y, int z) {
-    int res = z * z + y * 45 - 15 * x;
-    return res;
-}
-
-bool my_exp3(int x, int y) {
-    bool res = (y - 2)  == (x * 3 + 1) % 5;
-    printf("%d", res);
-    return  res;
-}
-
-int my_exp4(int x, int y) {
-    int res = y / 2 * x;
-    return res;
-}
-
-bool my_exp5(int x, int y, int z) {
-    bool res = y < x * z;
-    return res;
-}
-
