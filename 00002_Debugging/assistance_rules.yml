@@ -1,0 +1,6 @@
+---
+rules:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: submission_errored
+  then: Revise sus funciones, es posible que su código posea algún tipo de error que
+    no permite la compilación correcta!
