@@ -14,4 +14,4 @@ Codifique las respectivas funciones en C, para que puedan ser evaluadas en los e
 
 **NOTA:** No modifique el nombre de las funciones de la plantilla presentada.
 
-> **IMPORTANTE:** Si quiere probar las funciones y debugear sus resultados, setea `DEBUG true`.
+> **IMPORTANTE:** Para probar los resultado de las funciones codificadas, active el modo consulta asignando `DEBUG true`. Una vez concluida su consulta es importante que vuelva a asignar `DEBUG false` para poder completar la tarea correctamente.

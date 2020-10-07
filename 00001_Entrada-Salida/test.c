@@ -31,7 +31,7 @@ if (!DEBUG) {
   
 } else {
   
-  describe (genState("Modo DEBUG", X_VAR, Y_VAR, Z_VAR)) {
+  describe (genState("Modo Consulta", X_VAR, Y_VAR, Z_VAR)) {
     int dbgint = 0;
     bool dbgbool = false;
     
