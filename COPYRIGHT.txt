@@ -1,4 +1,4 @@
-Copyright Romina Altamirano, Hernán Maina and contributors
+Copyright Romina Altamirano and contributors
 
 This content consists of voluntary contributions made by many
 individuals. For exact contribution history, see its revision history
