@@ -33,23 +33,23 @@ if (!DEBUG) {
   
   describe (genState("Modo DEBUG", X_VAR, Y_VAR, Z_VAR)) {
     it (genIntDebugMsg("exp1", exp1())) {
-      false be equal to(true);
+      should_bool(false) be equal to(true);
     } end
     
     it (genIntDebugMsg("exp2",exp2())) {
-      false be equal to(true);
+      should_bool(false) be equal to(true);
     } end
     
     it (genBoolDebugMsg("exp3", exp3())) {
-      false be equal to(true);
+      should_bool(false) be equal to(true);
     } end
     
     it (genIntDebugMsg("exp4", exp4())) {
-      false be equal to(true);
+      should_bool(false) be equal to(true);
     } end
     
     it (genBoolDebugMsg("exp5", exp5())) {
-      false be equal to(true);
+      should_bool(false) be equal to(true);
     } end
   } end
   
