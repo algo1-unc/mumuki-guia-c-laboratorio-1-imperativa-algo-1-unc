@@ -3,26 +3,26 @@
 #include <string.h>
 
 // Funciones para generar mensaje de test
-char* genIntMsg(const char* function_name , const int val_expected) {
+char* genIntMsg(const char* function_name , const int val_expected, const int val_returned) {
     /*
         Toma el nombre de la funcion y el valor de resultado esperado (Int), 
         y crea el mensaje de devolucion para el test unitario.
     */
     
     char* message;
-    asprintf(&message, "Dado %s devuelve %d.", 
-        function_name, val_expected);
+    asprintf(&message, "Dado %s se esperaba %d, pero retorno %d.", 
+        function_name, val_expected, val_returned);
     return message;
 }
 
-char* genBoolMsg(const char* function_name , const bool val_expected) {
+char* genBoolMsg(const char* function_name , const bool val_expected, const bool val_returned) {
     /*
         Toma el nombre de la funcion y el valor de resultado esperado (Bool), 
         y crea el mensaje de devolucion para el test unitario.
     */
     char* message;
-    asprintf(&message, "Dado %s devuelve %s.", 
-        function_name, val_expected ? "true" : "false");
+    asprintf(&message, "Dado %s se esperaba %s, pero retorno %s.", 
+        function_name, val_expected ? "true" : "false", val_returned ? "true" : "false");
     return message;
 }
 
