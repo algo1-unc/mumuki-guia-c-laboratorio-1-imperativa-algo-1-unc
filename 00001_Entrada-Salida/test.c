@@ -31,7 +31,7 @@ if (!DEBUG) {
   
 } else {
   
-  describe ("Modo DEBUG", genState(X_VAR, Y_VAR, Z_VAR)) {
+  describe (genState("Modo DEBUG", X_VAR, Y_VAR, Z_VAR)) {
     it (genIntDebugMsg("exp1", exp1())) {
       false;
     } end
