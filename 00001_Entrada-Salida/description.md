@@ -8,8 +8,10 @@ Dada las siguientes expresiones:
 
 Codifique las respectivas funciones en C, para que puedan ser evaluadas en los estados:
 
->* Estado1: ```(x->7, y->3, z->5)```
+* Estado1: ```(x->7, y->3, z->5)```
 * Estado2: ```(x->1, y->10, z->8)```
 
 
 **NOTA:** No modifique el nombre de las funciones de la plantilla presentada.
+
+> **IMPORTANTE:** Si quiere probar las funciones y debugear sus resultados, setea la `DEBUG true`
