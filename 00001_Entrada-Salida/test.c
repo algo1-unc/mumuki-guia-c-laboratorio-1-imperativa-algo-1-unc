@@ -4,7 +4,7 @@ describe ("Test de estado (x,y,z)") {
   
   
   int out1 = my_exp1(X_VAR,Y_VAR);
-  it (genIntMsn("exp1", out1)) {
+  it (genIntMsg("exp1", out1)) {
     should_int(exp1()) be equal to(out1);
   } end
   
