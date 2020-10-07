@@ -1,6 +1,6 @@
 /*...extra...*/
 
-if {DEBUG} {
+if (!DEBUG) {
   describe (genState("Test", X_VAR, Y_VAR, Z_VAR, B_VAR, W_VAR)) {
     
     bool expected1 = true;
