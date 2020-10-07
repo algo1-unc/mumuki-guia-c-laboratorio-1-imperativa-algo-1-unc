@@ -44,7 +44,7 @@ if (!DEBUG) {
       false;
     } end
     
-    it (genIntBebugMsg("exp4", exp4())) {
+    it (genIntDebugMsg("exp4", exp4())) {
       false;
     } end
     

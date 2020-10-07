@@ -21,8 +21,7 @@ char* genIntDebugMsg(const char* function_name , const int val_returned) {
     */
     
     char* message;
-    asprintf(&message, "%s(), devolvio '%d'", 
-        function_name, val_returned);
+    asprintf(&message, "%s(), devolvio '%d'", function_name, val_returned);
     return message;
 }
 
