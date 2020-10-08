@@ -8,5 +8,4 @@ language: c
 id_format: "%05d"
 order:
 - 1
-- 2
 private: false
