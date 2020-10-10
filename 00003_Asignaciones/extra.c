@@ -4,33 +4,41 @@
 
 
 // Funciones para generar mensaje de test
-char* genState(const char* name_of_test, const int x, const int y) {
+char* genState( const char* name_of_test, 
+                const int x, 
+                const int y, 
+                const query_mode) {
     
     /*
         Input:
             name_of_test = Nombre del test a realizar.
             x = Valor de variable x en estado inicial.
             y = Valor de variable y en estado inicial
+            query_mode = Flag para formatear salida
         
         Output:
             message = Nombre de test personalizado
     */
     
     char* message;
-    asprintf(&message, "%s Sigma1(x->%d, y->%d)", name_of_test, x, y);
+    if (query_mode) {
+        asprintf(&message, "(MODO CONSULTA) %s, Sigma1(x->%d, y->%d)", name_of_test, x, y);
+    } else {
+        asprintf(&message, "(MODO TEST) %s, Sigma1(x->%d, y->%d)", name_of_test, x, y);
+    }
     return message;
 }
 
 char* genMsg(const char* var_name , 
                 const int val_expected, 
                 const int val_returned, 
-                bool debug_mode) {
+                bool query_mode) {
     /*
         Input:
             var_name = Nombre de variable de estado final a testear.
             val_expected = Valor esperado
             val_returned = Valor retornado por estudiante
-            debug_mode = Flag para formatear devolucion
+            query_mode = Flag para formatear salida
         
         Output:
             message = Mensaje de devolucion para el test unitario.
@@ -38,11 +46,11 @@ char* genMsg(const char* var_name ,
     
     char* message;
 
-    if (debug_mode) {
-      asprintf(&message, "(Consulta): SigmaN(%s->%d)", var_name, val_returned);
+    if (query_mode) {
+      asprintf(&message, "SigmaN(%s->%d)", var_name, val_returned);
 
     } else {
-      asprintf(&message, "(Test!): SigmaN(%s->), Esperado= %d, Retornado= %d.", 
+      asprintf(&message, "SigmaN(%s->), Esperado= %d, Retornado= %d.", 
         var_name, val_expected, val_returned);  
     }
     

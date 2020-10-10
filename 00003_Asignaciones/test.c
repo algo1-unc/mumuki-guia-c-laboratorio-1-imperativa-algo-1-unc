@@ -1,13 +1,7 @@
 /*...extra...*/
 
 
-if (!CONSULTA) {
-  describe ("Modo Test!") {} end
-} else {
-  describe ("Modo Consulta") {} end
-}
-  
-describe (genState("Función 'exp1a'", X_INIT, Y_INIT)) {
+describe (genState("Función 'exp1a'", X_INIT, Y_INIT, CONSULTA)) {
 
   int x_student = 1;
   int x_test = 1; 
@@ -26,7 +20,7 @@ describe (genState("Función 'exp1a'", X_INIT, Y_INIT)) {
 } end
 
 
-describe (genState("Función 'exp1b'", X_INIT, Y_INIT)) {
+describe (genState("Función 'exp1b'", X_INIT, Y_INIT, CONSULTA)) {
 
   int x_student = X_INIT;
   int y_student = Y_INIT;
@@ -56,7 +50,7 @@ describe (genState("Función 'exp1b'", X_INIT, Y_INIT)) {
 } end
 
 
-describe (genState("Función 'exp1c'", X_INIT, Y_INIT)) {
+describe (genState("Función 'exp1c'", X_INIT, Y_INIT, CONSULTA)) {
 
   int x_student = X_INIT;
   int y_student = Y_INIT;
