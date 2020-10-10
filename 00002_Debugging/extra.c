@@ -20,11 +20,12 @@ char* genState( const char* name_of_test,
     */
     
     char* message;
+    char* mode;
 
     if (!query_mode)  {
-        char* mode = "(MODO CONSULTA)";
+        mode = "(MODO CONSULTA)";
     } else {
-        char* mode = "(MODO TEST)";
+        mode = "(MODO TEST)";
 
     }
 
