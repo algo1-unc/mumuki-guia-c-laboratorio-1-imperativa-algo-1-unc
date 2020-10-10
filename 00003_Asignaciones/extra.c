@@ -39,10 +39,10 @@ char* genMsg(const char* var_name ,
     char* message;
 
     if (debug_mode) {
-      asprintf(&message, "Estado final (%s->%d)", var_name, val_returned);
+      asprintf(&message, "Modo Consulta: Estado final (%s->%d)", var_name, val_returned);
 
     } else {
-      asprintf(&message, "Estado final (%s->). Valor esperado: %d, Valor retornado: %d.", 
+      asprintf(&message, "Test: Estado final (%s->). Esperado: %d, Retornado: %d.", 
         var_name, val_expected, val_returned);  
     }
     
