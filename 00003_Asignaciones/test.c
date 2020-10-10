@@ -6,8 +6,8 @@ describe (genState("Función 'exp1a'", X_VAR, Y_VAR, CONSULTA)) {
   int x_student = 1;
   int x_test = 1; 
   
-  exp1a(&x_student);
-  my_exp1a(&x_test);
+  exp_1a(&x_student);
+  my_exp_1a(&x_test);
     
     it (genMsg("x", x_test, x_student, CONSULTA)) {
       if (!CONSULTA) {
@@ -28,8 +28,8 @@ describe (genState("Función 'exp1b'", X_VAR, Y_VAR, CONSULTA)) {
   int x_test = X_VAR; 
   int y_test = Y_VAR;
   
-  exp1b(&x_student, &y_student);
-  my_exp1b(&x_test, &y_test);
+  exp_1b(&x_student, &y_student);
+  my_exp_1b(&x_test, &y_test);
   
   it (genMsg("x", x_test, x_student, CONSULTA)) {
     if (!CONSULTA) {
@@ -58,8 +58,8 @@ describe (genState("Función 'exp1c'", X_VAR, Y_VAR, CONSULTA)) {
   int x_test = X_VAR; 
   int y_test = Y_VAR;
   
-  exp1c(&x_student, &y_student);
-  my_exp1c(&x_test, &y_test);
+  exp_1c(&x_student, &y_student);
+  my_exp_1c(&x_test, &y_test);
   
   
   it (genMsg("x", x_test, x_student, CONSULTA)) {

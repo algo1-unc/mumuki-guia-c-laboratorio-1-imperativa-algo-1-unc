@@ -54,7 +54,7 @@ char* genMsg( const char* var_name ,
       asprintf(&message, "SigmaN(%s->%d)", var_name, val_returned);
 
     } else {
-      asprintf(&message, "SigmaN(%s->), Esperado= %d, Retornado= %d.", 
+      asprintf(&message, "SigmaN(%s->), Esperado=%d, Retornado=%d.", 
         var_name, val_expected, val_returned);  
     }
     
@@ -63,17 +63,10 @@ char* genMsg( const char* var_name ,
 
 // Funciones para probar pejercicio
 
-void my_exp_1a(int *x0) {
-    *x0 = 5;
-}
-
-void my_exp_1b(int *x0, int *y0) {
-    *x0 = *x0 + *y0;
-    *y0 = *y0 + *y0;
-}
-
-
-void my_exp_1c(int *x0, int *y0) {
-    *y0 = *y0 + *y0;
-    *x0 = *x0 + *y0;
+void my_fun(int *x0, int *y0) {
+  if (*x0 >= *y0) {
+    *X0 = 0;    
+  } else {
+    *X0 = 2;
+  }
 }
