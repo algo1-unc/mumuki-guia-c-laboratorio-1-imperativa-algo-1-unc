@@ -9,7 +9,7 @@ describe (genState("Test ejer1a()", X_INIT, Y_INIT)) {
   exp1a(&x_student);
   my_exp1a(&x_expected);
     
-    it (genIntMsg("x", x_expected, x_student, DEBUG)) {
+    it (genMsg("x", x_expected, x_student, DEBUG)) {
       if (!DEBUG) {
         should_int(x_student) be equal to(x_expected);
       } else {
@@ -32,7 +32,7 @@ describe (genState("Test ejer1b()", X_INIT, Y_INIT)) {
   my_exp1b(&x_expected, &y_expected);
   
   
-  it (genIntMsg("x", x_expected, x_student, DEBUG)) {
+  it (genMsg("x", x_expected, x_student, DEBUG)) {
     if (!DEBUG) {
       should_int(x_student) be equal to(x_expected);
     } else {
@@ -41,7 +41,7 @@ describe (genState("Test ejer1b()", X_INIT, Y_INIT)) {
   } end
   
   
-  it (genIntMsg("y", y_expected, y_student, DEBUG)) {
+  it (genMsg("y", y_expected, y_student, DEBUG)) {
     if (!DEBUG) {
       should_int(y_student) be equal to(y_expected);
     } else {
@@ -64,7 +64,7 @@ describe (genState("Test ejer1c()", X_INIT, Y_INIT)) {
   my_exp1c(&x_expected, &y_expected);
   
   
-  it (genIntMsg("x", x_expected, x_student, DEBUG)) {
+  it (genMsg("x", x_expected, x_student, DEBUG)) {
     if (!DEBUG) {
       should_int(x_student) be equal to(x_expected);
     } else {
@@ -73,7 +73,7 @@ describe (genState("Test ejer1c()", X_INIT, Y_INIT)) {
   } end
   
   
-  it (genIntMsg("y", y_expected, y_student, DEBUG)) {
+  it (genMsg("y", y_expected, y_student, DEBUG)) {
     if (!DEBUG) {
       should_int(y_student) be equal to(y_expected);
     } else {
