@@ -56,7 +56,7 @@ char* genMsg(   const char* var_name,
             x_student, y_student);  
 
     } else {
-        asprintf(&message, "Error (%s->): Esperado(x->%d, y->%d, z->%d, m->%d) | Retornado(x->%d, y->%d, z->%d, m->%d)", 
+        asprintf(&message, "Error (%s->): Esperado(x->%d, y->%d) | Retornado(x->%d, y->%d)", 
             var_name, x_test, y_test, x_student, y_student);  
     }
     
