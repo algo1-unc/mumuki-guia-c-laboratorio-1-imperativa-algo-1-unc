@@ -5,14 +5,32 @@
 
 // Funciones para generar mensaje de test
 
-char* genState(const char* name_of_test, const int x, const int y, const int z, const bool b, const bool w) {
+char* genState( const char* name_of_test, 
+                const int x, const int y, const int z, 
+                const bool b, const bool w,
+                const bool query_mode) {
     /*
-        Formatea string con valores de estados pasados
+        Input:
+            name_of_test = Nombre del test a realizar.
+            x,y,x,b,w = Valores de variables en estado inicial.
+            query_mode = Flag para formatear salida
+        
+        Output:
+            message = Nombre de test personalizado
     */
     
     char* message;
-    asprintf(&message, "%s para estado (x->%d, y->%d, z->%d, b->%s, w->%s)",
-        name_of_test, x, y, z, b ? "true" : "false", w ? "true" : "false");
+
+    if (!query_mode)  {
+        char* mode = "(MODO CONSULTA)";
+    } else {
+        char* mode = "(MODO TEST)";
+
+    }
+
+    asprintf(&message, "%s %s, Sigma1(x->%d, y->%d, z->%d, b->%s, w->%s)",
+            mode, name_of_test, x, y, z, b ? "true" : "false", w ? "true" : "false");
+    
     return message;
 }
 
