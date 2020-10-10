@@ -10,7 +10,7 @@ void fun(int *x0, int *y0) {
   int x = *x0;
   int y = *y0;
   
-  // -> CODIO AQUI <-
+  // -> CODIGO AQUI <-
   
   *x0 = x;
   *y0 = y;

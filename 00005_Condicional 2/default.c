@@ -4,33 +4,34 @@
 // Constantes para valores de estado inicial 
 #define X_VAR ... 
 #define Y_VAR ...
+#define Z_VAR ...
+#define M_VAR ...
 
 
-void exp_1a(int *x0) {
-  int x = *x0;
-
-  // -> CODIGO AQUI <-
-  
-  *x0 = x;
-}
-
-void exp_1b(int *x0, int *y0) {
+void program1(int *x0, int *y0, int *z0, int *m0) {
   int x = *x0;
   int y = *y0;
+  int z = *z0;
+  int m = *m0;
   
   // -> CODIGO AQUI <-
   
   *x0 = x;
   *y0 = y;
+  *z0 = z;
+  *m0 = m;
 }
 
-
-void exp_1c(int *x0, int *y0) {
+void program2(int *x0, int *y0, int *z0, int *m0) {
   int x = *x0;
   int y = *y0;
+  int z = *z0;
+  int m = *m0;
   
   // -> CODIGO AQUI <-
   
   *x0 = x;
   *y0 = y;
+  *z0 = z;
+  *m0 = m;
 }
