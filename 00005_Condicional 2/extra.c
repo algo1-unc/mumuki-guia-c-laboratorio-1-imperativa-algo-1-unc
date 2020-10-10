@@ -56,7 +56,7 @@ char* genMsg(   const char* var_name,
 
 // Funciones para probar pejercicio
 
-void program1(int *x0, int *y0, int *z0, int *m0) {
+void my_program1(int *x0, int *y0, int *z0, int *m0) {
     int x = *x0;
     int y = *y0;
     int z = *z0;
@@ -74,7 +74,7 @@ void program1(int *x0, int *y0, int *z0, int *m0) {
     *m0 = m;
 }
 
-void program2(int *x0, int *y0, int *z0, int *m0) {
+void my_program2(int *x0, int *y0, int *z0, int *m0) {
     int x = *x0;
     int y = *y0;
     int z = *z0;
