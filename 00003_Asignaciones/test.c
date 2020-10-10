@@ -12,12 +12,13 @@ describe ("Test") {
   exp1b(&x_student, &y_student);
   my_exp1b(&x_expected, &y_expected);
   
-  it ("Estado de salida: (x->)") {
+  
+  it (genIntMsg("exp1b (x->)", x_expected,x_student, DEBUG)) {
     should_bool(x_student) be equal to(x_expected);
   } end
   
   
-  it ("Estado de salida: (y->)") {
+  it (genIntMsg("exp1b (y->)", y_expected,y_student, DEBUG)) {
     should_bool(y_student) be equal to(y_expected);
   } end
   

@@ -15,6 +15,23 @@ char* genState(const char* name_of_test, const int x, const int y) {
 }
 
 
+char* genIntMsg(const char* function_name , const int val_expected, const int val_returned, bool debug_mode) {
+    /*
+        Toma el nombre de la funcion y el valor de resultado esperado (Int), 
+        y crea el mensaje de devolucion para el test unitario.
+    */
+    
+    char* message;
+    if (debug_mode) {
+      asprintf(&message, "%s, devolvio '%d'", function_name, val_returned);
+    } else {
+      asprintf(&message, "%s. Valor esperado:%d, Valor retornado:%d.", 
+        function_name, val_expected, val_returned);  
+    }
+    
+    return message;
+}
+
 // Funciones para probar pejercicio
 void my_exp1a(int *x0) {
     *x0 = 5;
