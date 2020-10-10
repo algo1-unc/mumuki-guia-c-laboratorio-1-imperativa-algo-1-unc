@@ -7,32 +7,35 @@
 char* genState( const char* name_of_test, 
                 const int x, 
                 const int y, 
-                const query_mode) {
+                const bool query_mode) {
     
     /*
         Input:
             name_of_test = Nombre del test a realizar.
-            x = Valor de variable x en estado inicial.
-            y = Valor de variable y en estado inicial
-            query_mode = Flag para formatear salida
+            x, y = Valor de variables en estado inicial.
+            query_mode = Flag para formatear salida.
         
         Output:
             message = Nombre de test personalizado
     */
     
     char* message;
-    if (query_mode) {
-        asprintf(&message, "(MODO CONSULTA) %s, Sigma1(x->%d, y->%d)", name_of_test, x, y);
+    
+    if (!query_mode)  {
+      char* mode = "(MODO CONSULTA)";
     } else {
-        asprintf(&message, "(MODO TEST) %s, Sigma1(x->%d, y->%d)", name_of_test, x, y);
+      char* mode = "(MODO TEST)";
     }
+    
+    asprintf(&message, "%s %s, Sigma1(x->%d, y->%d)", mode, name_of_test, x, y);
+    
     return message;
 }
 
-char* genMsg(const char* var_name , 
-                const int val_expected, 
-                const int val_returned, 
-                bool query_mode) {
+char* genMsg( const char* var_name , 
+              const int val_expected, 
+              const int val_returned, 
+              const bool query_mode) {
     /*
         Input:
             var_name = Nombre de variable de estado final a testear.

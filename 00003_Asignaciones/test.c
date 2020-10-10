@@ -1,7 +1,7 @@
 /*...extra...*/
 
 
-describe (genState("Función 'exp1a'", X_INIT, Y_INIT, CONSULTA)) {
+describe (genState("Función 'exp1a'", X_VAR, Y_VAR, CONSULTA)) {
 
   int x_student = 1;
   int x_test = 1; 
@@ -20,13 +20,13 @@ describe (genState("Función 'exp1a'", X_INIT, Y_INIT, CONSULTA)) {
 } end
 
 
-describe (genState("Función 'exp1b'", X_INIT, Y_INIT, CONSULTA)) {
+describe (genState("Función 'exp1b'", X_VAR, Y_VAR, CONSULTA)) {
 
-  int x_student = X_INIT;
-  int y_student = Y_INIT;
+  int x_student = X_VAR;
+  int y_student = Y_VAR;
   
-  int x_test = X_INIT; 
-  int y_test = Y_INIT;
+  int x_test = X_VAR; 
+  int y_test = Y_VAR;
   
   exp1b(&x_student, &y_student);
   my_exp1b(&x_test, &y_test);
@@ -50,13 +50,13 @@ describe (genState("Función 'exp1b'", X_INIT, Y_INIT, CONSULTA)) {
 } end
 
 
-describe (genState("Función 'exp1c'", X_INIT, Y_INIT, CONSULTA)) {
+describe (genState("Función 'exp1c'", X_VAR, Y_VAR, CONSULTA)) {
 
-  int x_student = X_INIT;
-  int y_student = Y_INIT;
+  int x_student = X_VAR;
+  int y_student = Y_VAR;
   
-  int x_test = X_INIT; 
-  int y_test = Y_INIT;
+  int x_test = X_VAR; 
+  int y_test = Y_VAR;
   
   exp1c(&x_student, &y_student);
   my_exp1c(&x_test, &y_test);
@@ -79,5 +79,3 @@ describe (genState("Función 'exp1c'", X_INIT, Y_INIT, CONSULTA)) {
   } end
   
 } end
-
-  

@@ -3,7 +3,7 @@
 
 <img src="https://raw.githubusercontent.com/algo1-unc/mumuki-guia-c-laboratorio-1-imperativa-algo-1-unc/master/assets/2020-10-06-002613_754x147_scrot_1602341264532.png" alt="2020-10-06-002613_754x147_scrot_1602341264532.png" width=100% >
 
-> **Importante**: "Para declarar un determinado estado inicial (x->, y->), asigne valores a `X_INIT` e `Y_INIT`".
+> **Importante**: "Para declarar un determinado estado inicial (x->, y->), asigne valores a `X_VAR` e `Y_VAR`".
 
 2.  Complete la tabla de abajo para diferentes estados iniciales. Para ello, asigne `CONSULTA true` y envie su solución para obtener los valores de los estados finales de cada una de las funciones programadas.
 
