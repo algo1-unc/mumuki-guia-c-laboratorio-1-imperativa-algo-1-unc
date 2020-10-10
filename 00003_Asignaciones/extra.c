@@ -17,7 +17,7 @@ char* genState(const char* name_of_test, const int x, const int y) {
     */
     
     char* message;
-    asprintf(&message, "%s: estado inicial (x->%d, y->%d)", name_of_test, x, y);
+    asprintf(&message, "%s, Sigma1(x->%d, y->%d). ", name_of_test, x, y);
     return message;
 }
 
@@ -39,10 +39,10 @@ char* genMsg(const char* var_name ,
     char* message;
 
     if (debug_mode) {
-      asprintf(&message, "Modo Consulta: Estado final (%s->%d)", var_name, val_returned);
+      asprintf(&message, "(Consulta): SigmaN(%s->%d)", var_name, val_returned);
 
     } else {
-      asprintf(&message, "Test: Estado final (%s->). Esperado: %d, Retornado: %d.", 
+      asprintf(&message, "(Test!): SigmaN(%s->), Esperado= %d, Retornado= %d.", 
         var_name, val_expected, val_returned);  
     }
     
