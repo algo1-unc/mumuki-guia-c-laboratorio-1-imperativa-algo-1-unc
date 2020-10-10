@@ -4,4 +4,4 @@
 
 * 2) Una vez programadas ámbas funciones, compruebe los estados Sigma1 y Sigma2 resultantes, seteando `CONSULTA true`. 
 
-> Re-asigne `CONSULTA false` para culminar y corregir sus programas.
+> Re-asigne `CONSULTA false` para corregir y completar la actividad.

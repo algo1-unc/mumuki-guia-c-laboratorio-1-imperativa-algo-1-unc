@@ -33,10 +33,11 @@ char* genState( const char* name_of_test,
     return message;
 }
 
-char* genMsg(   const int x_test, const int x_student,
-                const int y_test, const int y_student,
-                const int z_test, const int z_student,
-                const int m_test, const int m_student,
+char* genMsg(   const char* var_name,
+                const int x_test, const int y_test,
+                const int z_test, const int m_test,
+                const int x_student, const int y_student,
+                const int z_student, const int m_student,
                 const bool query_mode) {
     
     char* message;
@@ -46,7 +47,7 @@ char* genMsg(   const int x_test, const int x_student,
             x_student, y_student, z_student, m_student);  
 
     } else {
-        asprintf(&message, "Esperado(x->%d, y->%d, z->%d, m->%d) | Retornado(x->%d, y->%d, z->%d, m->%d)", 
+        asprintf(&message, "chequeo (%s): Esperado(x->%d, y->%d, z->%d, m->%d) | Retornado(x->%d, y->%d, z->%d, m->%d)", 
             x_test, y_test, z_test, m_test, x_student, y_student, z_student, m_student);  
     }
     
