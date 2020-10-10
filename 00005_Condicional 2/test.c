@@ -42,10 +42,10 @@ if (CONSULTA) {
     z_test = 8;
     m_test = 0;
 
-    x_student = x_test;
-    y_student = y_test;
-    z_student = z_test;
-    m_student = m_test;
+    x_student = 5;
+    y_student = 4;
+    z_student = 8;
+    m_student = 0;
 
     describe (genState("Run program1", x_test, y_test, z_test, m_test, CONSULTA)) {
 
