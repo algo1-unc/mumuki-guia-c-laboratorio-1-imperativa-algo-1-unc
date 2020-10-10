@@ -28,20 +28,21 @@ char* genState( const char* name_of_test,
       mode = "(MODO TEST)";
     }
     
-    asprintf(&message, "%s %s, Sigma1(x->%d, y->%d)", mode, name_of_test, x, y);
+    asprintf(&message, "%s %s, Sigma0(x->%d, y->%d)", mode, name_of_test, x, y);
     
     return message;
 }
 
-char* genMsg( const char* var_name , 
-              const int val_expected, 
-              const int val_returned, 
-              const bool query_mode) {
-    /*
+char* genMsg(   const char* var_name,
+                const int x_test, const int y_test,
+                const int x_student, const int y_student,
+                const bool query_mode) {
+  
+  /*
         Input:
-            var_name = Nombre de variable de estado final a testear.
-            val_expected = Valor esperado
-            val_returned = Valor retornado por estudiante
+            var_name = Nombre de variable a testear
+            *_test = valores correctos de funciones de testeo
+            *_student = valores reotnados por funciones de estudiantes
             query_mode = Flag para formatear salida
         
         Output:
@@ -51,17 +52,18 @@ char* genMsg( const char* var_name ,
     char* message;
 
     if (query_mode) {
-      asprintf(&message, "SigmaN(%s->%d)", var_name, val_returned);
+        asprintf(&message, "Sigma(x->%d, y->%d)", 
+            x_student, y_student);  
 
     } else {
-      asprintf(&message, "SigmaN(%s->), Esperado= %d, Retornado= %d.", 
-        var_name, val_expected, val_returned);  
+        asprintf(&message, "Error (%s->): Esperado(x->%d, y->%d, z->%d, m->%d) | Retornado(x->%d, y->%d, z->%d, m->%d)", 
+            var_name, x_test, y_test, x_student, y_student);  
     }
     
     return message;
 }
 
-// Funciones para probar pejercicio
+// Funciones para probar ejercicio
 
 void my_exp_1a(int *x0) {
     *x0 = 5;

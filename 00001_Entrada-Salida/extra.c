@@ -26,7 +26,7 @@ char* genState( const char* name_of_test,
         mode = "(MODO TEST)";
     }
 
-    asprintf(&message, "%s %s, Sigma1(x->%d, y->%d, z->%d)", mode, name_of_test, x, y, z);
+    asprintf(&message, "%s %s, Sigma0(x->%d, y->%d, z->%d)", mode, name_of_test, x, y, z);
     
     return message;
 }
