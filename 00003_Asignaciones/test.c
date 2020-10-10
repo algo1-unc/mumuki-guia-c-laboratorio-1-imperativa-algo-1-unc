@@ -1,7 +1,7 @@
 /*...extra...*/
 
 
-if (!BEBUG) {
+if (!CONSULTA) {
   describe ("Modo Test!") {} end
 } else {
   describe ("Modo Consulta") {} end
