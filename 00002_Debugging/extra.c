@@ -28,7 +28,7 @@ char* genState( const char* name_of_test,
         mode = "(MODO TEST)";
     }
 
-    asprintf(&message, "%s %s, Sigma0(x->%d, y->%d, z->%d, b->%s, w->%s)",
+    asprintf(&message, "[%s %s, Sigma0(x->%d, y->%d, z->%d, b->%s, w->%s)]",
             mode, name_of_test, x, y, z, b ? "true" : "false", w ? "true" : "false");
     
     return message;

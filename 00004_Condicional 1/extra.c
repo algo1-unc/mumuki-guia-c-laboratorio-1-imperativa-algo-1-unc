@@ -28,7 +28,7 @@ char* genState( const char* name_of_test,
       mode = "(MODO TEST)";
     }
     
-    asprintf(&message, "%s %s, Sigma0(x->%d, y->%d)", mode, name_of_test, x, y);
+    asprintf(&message, "[%s %s, Sigma0(x->%d, y->%d)]", mode, name_of_test, x, y);
     
     return message;
 }
@@ -52,7 +52,7 @@ char* genMsg(   const char* var_name,
     char* message;
 
     if (query_mode) {
-        asprintf(&message, "Sigma(x->%d, y->%d)", 
+        asprintf(&message, "SigmaN(x->%d, y->%d)", 
             x_student, y_student);  
 
     } else {
