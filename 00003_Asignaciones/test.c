@@ -1,6 +1,12 @@
 /*...extra...*/
 
 
+if (!BEBUG) {
+  describe ("Modo Test!") {} end
+} else {
+  describe ("Modo Consulta") {} end
+}
+  
 describe (genState("Función 'exp1a'", X_INIT, Y_INIT)) {
 
   int x_student = 1;
@@ -9,8 +15,8 @@ describe (genState("Función 'exp1a'", X_INIT, Y_INIT)) {
   exp1a(&x_student);
   my_exp1a(&x_test);
     
-    it (genMsg("x", x_test, x_student, DEBUG)) {
-        if (!DEBUG) {
+    it (genMsg("x", x_test, x_student, CONSULTA)) {
+        if (!CONSULTA) {
             should_int(x_student) be equal to(x_test);
         } else {
             should_bool(false) be equal to(true);
@@ -31,16 +37,16 @@ describe (genState("Función 'exp1b'", X_INIT, Y_INIT)) {
   exp1b(&x_student, &y_student);
   my_exp1b(&x_test, &y_test);
   
-  it (genMsg("x", x_test, x_student, DEBUG)) {
-    if (!DEBUG) {
+  it (genMsg("x", x_test, x_student, CONSULTA)) {
+    if (!CONSULTA) {
         should_int(x_student) be equal to(x_test);
     } else {
         should_bool(false) be equal to(true);
     }
   } end
   
-  it (genMsg("y", y_test, y_student, DEBUG)) {
-    if (!DEBUG) {
+  it (genMsg("y", y_test, y_student, CONSULTA)) {
+    if (!CONSULTA) {
         should_int(y_student) be equal to(y_test);
     } else {
         should_bool(false) be equal to(true);
@@ -62,16 +68,16 @@ describe (genState("Función 'exp1c'", X_INIT, Y_INIT)) {
   my_exp1c(&x_test, &y_test);
   
   
-  it (genMsg("x", x_test, x_student, DEBUG)) {
-    if (!DEBUG) {
+  it (genMsg("x", x_test, x_student, CONSULTA)) {
+    if (!CONSULTA) {
         should_int(x_student) be equal to(x_test);
     } else {
         should_bool(false) be equal to(true);
     }
   } end
   
-  it (genMsg("y", y_test, y_student, DEBUG)) {
-    if (!DEBUG) {
+  it (genMsg("y", y_test, y_student, CONSULTA)) {
+    if (!CONSULTA) {
         should_int(y_student) be equal to(y_test);
     } else {
         should_bool(false) be equal to(true);

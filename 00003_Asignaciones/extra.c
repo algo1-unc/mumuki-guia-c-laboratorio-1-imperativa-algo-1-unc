@@ -17,7 +17,7 @@ char* genState(const char* name_of_test, const int x, const int y) {
     */
     
     char* message;
-    asprintf(&message, "%s, Sigma1(x->%d, y->%d). ", name_of_test, x, y);
+    asprintf(&message, "%s Sigma1(x->%d, y->%d)", name_of_test, x, y);
     return message;
 }
 
