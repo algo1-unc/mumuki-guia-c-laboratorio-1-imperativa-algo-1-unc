@@ -65,8 +65,8 @@ char* genMsg( const char* var_name ,
 
 void my_fun(int *x0, int *y0) {
   if (*x0 >= *y0) {
-    *X0 = 0;    
+    *x0 = 0;    
   } else {
-    *X0 = 2;
+    *x0 = 2;
   }
 }
