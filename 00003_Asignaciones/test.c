@@ -10,11 +10,11 @@ describe (genState("Función 'exp1a'", X_VAR, Y_VAR, CONSULTA)) {
   my_exp1a(&x_test);
     
     it (genMsg("x", x_test, x_student, CONSULTA)) {
-        if (!CONSULTA) {
-            should_int(x_student) be equal to(x_test);
-        } else {
-            should_bool(false) be equal to(true);
-        }
+      if (!CONSULTA) {
+        should_int(x_student) be equal to(x_test);
+      } else {
+        should_bool(false) be equal to(true);
+      }
     } end
 
 } end
@@ -33,17 +33,17 @@ describe (genState("Función 'exp1b'", X_VAR, Y_VAR, CONSULTA)) {
   
   it (genMsg("x", x_test, x_student, CONSULTA)) {
     if (!CONSULTA) {
-        should_int(x_student) be equal to(x_test);
+      should_int(x_student) be equal to(x_test);
     } else {
-        should_bool(false) be equal to(true);
+      should_bool(false) be equal to(true);
     }
   } end
   
   it (genMsg("y", y_test, y_student, CONSULTA)) {
     if (!CONSULTA) {
-        should_int(y_student) be equal to(y_test);
+      should_int(y_student) be equal to(y_test);
     } else {
-        should_bool(false) be equal to(true);
+      should_bool(false) be equal to(true);
     }
   } end
   
@@ -64,17 +64,17 @@ describe (genState("Función 'exp1c'", X_VAR, Y_VAR, CONSULTA)) {
   
   it (genMsg("x", x_test, x_student, CONSULTA)) {
     if (!CONSULTA) {
-        should_int(x_student) be equal to(x_test);
+      should_int(x_student) be equal to(x_test);
     } else {
-        should_bool(false) be equal to(true);
+      should_bool(false) be equal to(true);
     }
   } end
   
   it (genMsg("y", y_test, y_student, CONSULTA)) {
     if (!CONSULTA) {
-        should_int(y_student) be equal to(y_test);
+      should_int(y_student) be equal to(y_test);
     } else {
-        should_bool(false) be equal to(true);
+      should_bool(false) be equal to(true);
     }
   } end
   

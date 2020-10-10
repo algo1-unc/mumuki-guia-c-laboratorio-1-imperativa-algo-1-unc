@@ -22,7 +22,7 @@ char* genState( const char* name_of_test,
     char* message;
     char* mode;
     
-    if (!query_mode)  {
+    if (query_mode)  {
       mode = "(MODO CONSULTA)";
     } else {
       mode = "(MODO TEST)";
@@ -62,6 +62,7 @@ char* genMsg( const char* var_name ,
 }
 
 // Funciones para probar pejercicio
+
 void my_exp1a(int *x0) {
     *x0 = 5;
 }

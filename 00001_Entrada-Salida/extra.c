@@ -4,43 +4,81 @@
 
 // Funciones para generar mensaje de test
 
-char* genState(const char* name_of_test, const int x, const int y, const int z) {
+char* genState( const char* name_of_test, 
+                const int x, const int y, const int z, 
+                const bool query_mode) {
     /*
-        Formatea string con valores de estados pasados
+        Input:
+            name_of_test = Nombre del test a realizar.
+            x,y,z = Valores de variables en estado inicial.
+            query_mode = Flag para formatear salida
+        
+        Output:
+            message = Nombre de test personalizado
     */
     
     char* message;
-    asprintf(&message, "%s para estado (x->%d, y->%d, z->%d)", name_of_test, x,y,z);
+    char* mode;
+
+    if (query_mode)  {
+        mode = "(MODO CONSULTA)";
+    } else {
+        mode = "(MODO TEST)";
+    }
+
+    asprintf(&message, "%s %s, Sigma1(x->%d, y->%d, z->%d, b->%s, w->%s)", mode, name_of_test, x, y, z);
+    
     return message;
 }
 
-char* genIntMsg(const char* function_name , const int val_expected, const int val_returned, bool debug_mode) {
+char* genIntMsg(const char* function_name, 
+                const int val_expected, 
+                const int val_returned, 
+                const bool debug_mode) {
     /*
-        Toma el nombre de la funcion y el valor de resultado esperado (Int), 
-        y crea el mensaje de devolucion para el test unitario.
+        Input:
+            function_name = Nombre de funcion a testear.
+            val_expected = Valor (int) esperado
+            val_returned = Valor (int) retornado por estudiante
+            query_mode = Flag para formatear salida
+        
+        Output:
+            message = Mensaje de devolucion para el test unitario.
     */
     
     char* message;
+    
     if (debug_mode) {
       asprintf(&message, "%s(), devolvio '%d'", function_name, val_returned);
     } else {
-      asprintf(&message, "Dado %s(). Valor esperado:%d, Valor retornado:%d.", 
+      asprintf(&message, "Dado %s(), Esperado=%d, Retornado=%d.", 
         function_name, val_expected, val_returned);  
     }
     
     return message;
 }
 
-char* genBoolMsg(const char* function_name , const bool val_expected, const bool val_returned, bool debug_mode) {
+char* genBoolMsg( const char* function_name, 
+                  const bool val_expected, 
+                  const bool val_returned, 
+                  const bool debug_mode) {
     /*
-        Toma el nombre de la funcion y el valor de resultado esperado (Bool), 
-        y crea el mensaje de devolucion para el test unitario.
+        Input:
+            function_name = Nombre de funcion a testear.
+            val_expected = Valor (bool) esperado
+            val_returned = Valor (bool) retornado por estudiante
+            query_mode = Flag para formatear salida
+        
+        Output:
+            message = Mensaje de devolucion para el test unitario.
     */
+    
     char* message;
+    
     if (debug_mode) {
       asprintf(&message, "%s(), devolvio '%s'", function_name, val_returned ? "true" : "false");
     } else {
-      asprintf(&message, "Dado %s(). Valor esperado:%s, Valor retornado:%s.", 
+      asprintf(&message, "Dado %s(), Esperado=%s, Retornado=%s.", 
         function_name, val_expected ? "true" : "false", val_returned ? "true" : "false");  
     }
     

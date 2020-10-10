@@ -12,6 +12,6 @@ Codifique las respectivas funciones en C, para que puedan ser evaluadas en los e
 * Estado2: ```(x->1, y->10, z->8)```
 
 
-**IMPORTANTE:** Para probar los resultado de las funciones codificadas, active el modo consulta asignando `DEBUG true`. Una vez concluida su consulta es importante que vuelva a asignar `DEBUG false` para poder completar la tarea correctamente.
+**IMPORTANTE:** Para probar los resultado de las funciones codificadas, active el modo consulta asignando `CONSULTA true`. Una vez concluida su consulta es importante que vuelva a asignar `CONSULTA false` para poder completar la tarea correctamente.
 
 > **NOTA:** No modifique el nombre de las funciones de la plantilla presentada.

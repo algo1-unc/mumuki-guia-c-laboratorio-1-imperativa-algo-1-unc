@@ -1,5 +1,5 @@
 // Permite intercambiar entre modo testeo y de consulta.
-#define DEBUG false
+#define CONSULTA false
 
 // Constantes para valores de estados
 #define X_VAR ... 

@@ -22,11 +22,10 @@ char* genState( const char* name_of_test,
     char* message;
     char* mode;
 
-    if (!query_mode)  {
+    if (query_mode)  {
         mode = "(MODO CONSULTA)";
     } else {
         mode = "(MODO TEST)";
-
     }
 
     asprintf(&message, "%s %s, Sigma1(x->%d, y->%d, z->%d, b->%s, w->%s)",
@@ -35,33 +34,27 @@ char* genState( const char* name_of_test,
     return message;
 }
 
-char* genIntMsg(const char* function_name , const int val_expected, const int val_returned, bool debug_mode) {
-    /*
-        Toma el nombre de la funcion y el valor de resultado esperado (Int), 
-        y crea el mensaje de devolucion para el test unitario.
-    */
-    
-    char* message;
-    if (debug_mode) {
-      asprintf(&message, "%s(), devolvio '%d'", function_name, val_returned);
-    } else {
-      asprintf(&message, "Dado %s(). Valor esperado:%d, Valor retornado:%d.", 
-        function_name, val_expected, val_returned);  
-    }
-    
-    return message;
-}
 
-char* genBoolMsg(const char* function_name , const bool val_expected, const bool val_returned, bool debug_mode) {
+char* genBoolMsg( const char* function_name, 
+                  const bool val_expected, 
+                  const bool val_returned, 
+                  const bool debug_mode) {
     /*
-        Toma el nombre de la funcion y el valor de resultado esperado (Bool), 
-        y crea el mensaje de devolucion para el test unitario.
+        Input:
+            function_name = Nombre de funcion a testear.
+            val_expected = Valor (bool) esperado
+            val_returned = Valor (bool) retornado por estudiante
+            query_mode = Flag para formatear salida
+        
+        Output:
+            message = Mensaje de devolucion para el test unitario.
     */
+    
     char* message;
     if (debug_mode) {
       asprintf(&message, "%s(), devolvio '%s'", function_name, val_returned ? "true" : "false");
     } else {
-      asprintf(&message, "Dado %s(). Valor esperado:%s, Valor retornado:%s.", 
+      asprintf(&message, "Dado %s(), Esperado=%s, Retornado=%s.", 
         function_name, val_expected ? "true" : "false", val_returned ? "true" : "false");  
     }
     
