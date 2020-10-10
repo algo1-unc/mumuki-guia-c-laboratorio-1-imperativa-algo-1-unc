@@ -7,42 +7,30 @@
 
 
 void exp1a(int *x0) {
-    int x = *x0;
-    
-    /*
-      ---------------
-      -> CODIO AQUI <-
-      ---------------
-    */
-    
-    *x0 = x;
+  int x = *x0;
+
+  // -> CODIO AQUI <-
+  
+  *x0 = x;
 }
 
 void exp1b(int *x0, int *y0) {
-    int x = *x0;
-    int y = *y0;
-    
-    /*
-      ---------------
-      -> CODIO AQUI <-
-      ---------------
-    */
-    
-    *x0 = x;
-    *y0 = y;
+  int x = *x0;
+  int y = *y0;
+  
+  // -> CODIO AQUI <-
+  
+  *x0 = x;
+  *y0 = y;
 }
 
 
 void exp1c(int *x0, int *y0) {
-    int x = *x0;
-    int y = *y0;
-    
-    /*
-      ---------------
-      -> CODIO AQUI <-
-      ---------------
-    */
-    
-    *x0 = x;
-    *y0 = y;
+  int x = *x0;
+  int y = *y0;
+  
+  // -> CODIO AQUI <-
+  
+  *x0 = x;
+  *y0 = y;
 }

@@ -5,28 +5,45 @@
 
 // Funciones para generar mensaje de test
 char* genState(const char* name_of_test, const int x, const int y) {
+    
     /*
-        Formatea string con valores de estados pasados
+        Input:
+            name_of_test = Nombre del test a realizar.
+            x = Valor de variable x en estado inicial.
+            y = Valor de variable y en estado inicial
+        
+        Output:
+            message = Nombre de test personalizado
     */
     
     char* message;
-    asprintf(&message, "%s para estado (x->%d, y->%d", name_of_test, x, y);
+    asprintf(&message, "%s: estado inicial (x->%d, y->%d)", name_of_test, x, y);
     return message;
 }
 
-
-char* genIntMsg(const char* function_name , const int val_expected, const int val_returned, bool debug_mode) {
+char* genMsg(const char* var_name , 
+                const int val_expected, 
+                const int val_returned, 
+                bool debug_mode) {
     /*
-        Toma el nombre de la funcion y el valor de resultado esperado (Int), 
-        y crea el mensaje de devolucion para el test unitario.
+        Input:
+            var_name = Nombre de variable de estado final a testear.
+            val_expected = Valor esperado
+            val_returned = Valor retornado por estudiante
+            debug_mode = Flag para formatear devolucion
+        
+        Output:
+            message = Mensaje de devolucion para el test unitario.
     */
     
     char* message;
+
     if (debug_mode) {
-      asprintf(&message, "%s, devolvio '%d'", function_name, val_returned);
+      asprintf(&message, "Estado final (%s->%d)", var_name, val_returned);
+
     } else {
-      asprintf(&message, "%s. Valor esperado:%d, Valor retornado:%d.", 
-        function_name, val_expected, val_returned);  
+      asprintf(&message, "Estado final (%s->). Valor esperado: %d, Valor retornado: %d.", 
+        var_name, val_expected, val_returned);  
     }
     
     return message;
