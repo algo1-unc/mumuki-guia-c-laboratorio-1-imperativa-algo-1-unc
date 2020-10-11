@@ -50,13 +50,17 @@ char* genMsg(   const char* var_name,
 // Funciones para probar ejercicio
 
 void my_exp_1h(int *i0) {
-  while(*i0 != 0) {
-    *i0 = *i0 - 1;
+  int i = *i0;
+  while(i != 0) {
+    i = i - 1;
   }
+  *i0 = i;
 }
 
 void my_exp_1i(int *i0) {
-  while(*i0 != 0) {
-    *i0 = 0;
+  int i = *i0;
+  while(i != 0) {
+    i = 0;
   }
+  *i0 = i;
 }
