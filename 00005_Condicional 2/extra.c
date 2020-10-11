@@ -20,12 +20,10 @@ char* genState( const char* name_of_test,
     */
     
     char* message;
-    char* mode;
+    char* mode = "";
     
     if (query_mode)  {
       mode = "(MODO CONSULTA)";
-    } else {
-      mode = "(MODO TEST)";
     }
     
     asprintf(&message, "[%s %s, Sigma0(x->%d, y->%d, z->%d, m->%d)]", mode, name_of_test, x, y, z, m);
