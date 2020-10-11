@@ -7,13 +7,8 @@ if (CONSULTA) {
 
     describe (genState("exp_1h", I_VAR, CONSULTA)) {
         i_student = I_VAR;
-        
-        // Compruebo que no ingrese valores negativos para evitar iteraciones infinitas
-        it ("Se ha producido un bucle infinito. Revise valores de estado inicial!") {
-            should_int(i_student) not be equal to((-1)*abs(i_student));
-        } end
-
         exp_1h(&i_student);
+        
         it (genMsg("", 0, i_student, CONSULTA)) {
             should_bool(false) be equal to(true);
         } end
