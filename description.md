@@ -1,4 +1,4 @@
-## Programas como transformadores de estados
+#### **Programas como transformadores de estados**
 
 **1)** El objetivo de este proyecto es introducir:
 
