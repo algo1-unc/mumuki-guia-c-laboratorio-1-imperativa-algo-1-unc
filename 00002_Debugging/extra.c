@@ -33,13 +33,11 @@ char* genState( const char* name_of_test,
 }
 
 
-char* genBoolMsg( const char* function_name, 
-                  const bool val_expected, 
+char* genBoolMsg( const bool val_expected, 
                   const bool val_returned, 
                   const bool debug_mode) {
     /*
         Input:
-            function_name = Nombre de funcion a testear.
             val_expected = Valor (bool) esperado
             val_returned = Valor (bool) retornado por estudiante
             query_mode = Flag para formatear salida
@@ -50,10 +48,9 @@ char* genBoolMsg( const char* function_name,
     
     char* message;
     if (debug_mode) {
-      asprintf(&message, "%s(), devolvio '%s'", function_name, val_returned ? "true" : "false");
+      asprintf(&message, "Retornado=%s", val_returned ? "true" : "false");
     } else {
-      asprintf(&message, "Dado %s(), Esperado=%s, Retornado=%s.", 
-        function_name, val_expected ? "true" : "false", val_returned ? "true" : "false");  
+      asprintf(&message, "Esperado=%s, Retornado=%s.", val_expected ? "true" : "false", val_returned ? "true" : "false");  
     }
     
     return message;
