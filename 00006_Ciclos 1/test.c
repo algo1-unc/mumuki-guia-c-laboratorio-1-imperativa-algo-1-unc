@@ -36,8 +36,9 @@ if (CONSULTA) {
         describe (genState("exp_1h", i_test, CONSULTA)) {
             my_exp_1h(&i_test);
             exp_1h(&i_student);
-                
-            it (genMsg("", i_test, i_student, CONSULTA)) {
+            
+            // Controlo estado final de variable i
+            it (genMsg("i", i_test, i_student, CONSULTA)) {
                 should_int(i_student) be equal to(i_test);
             } end
 
@@ -45,12 +46,13 @@ if (CONSULTA) {
 
         i_test = 0;
         i_student = i_test;
-
+        
+        // Controlo estado final de variable i
         describe (genState("exp_1h", i_test, CONSULTA)) {
             my_exp_1h(&i_test);
             exp_1h(&i_student);
                 
-            it (genMsg("", i_test, i_student, CONSULTA)) {
+            it (genMsg("i", i_test, i_student, CONSULTA)) {
                 should_int(i_student) be equal to(i_test);
             } end
 
@@ -63,12 +65,13 @@ if (CONSULTA) {
 
         i_test = 400;
         i_student = i_test;
-
+        
         describe (genState("exp_1i", i_test, CONSULTA)) {
             my_exp_1i(&i_test);
             exp_1i(&i_student);
-                
-            it (genMsg("", i_test, i_student, CONSULTA)) {
+            
+            // Controlo estado final de variable i
+            it (genMsg("i", i_test, i_student, CONSULTA)) {
                 should_int(i_student) be equal to(i_test);
             } end
 
@@ -80,8 +83,9 @@ if (CONSULTA) {
         describe (genState("exp_1i", i_test, CONSULTA)) {
             my_exp_1i(&i_test);
             exp_1i(&i_student);
-                
-            it (genMsg("", i_test, i_student, CONSULTA)) {
+            
+            // Controlo estado final de variable i
+            it (genMsg("i", i_test, i_student, CONSULTA)) {
                 should_int(i_student) be equal to(i_test);
             } end
 
