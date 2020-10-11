@@ -29,13 +29,11 @@ char* genState( const char* name_of_test,
     return message;
 }
 
-char* genIntMsg(const char* function_name, 
-                const int val_expected, 
+char* genIntMsg(const int val_expected, 
                 const int val_returned, 
                 const bool debug_mode) {
     /*
         Input:
-            function_name = Nombre de funcion a testear.
             val_expected = Valor (int) esperado
             val_returned = Valor (int) retornado por estudiante
             query_mode = Flag para formatear salida
@@ -47,22 +45,19 @@ char* genIntMsg(const char* function_name,
     char* message;
     
     if (debug_mode) {
-      asprintf(&message, "%s(), devolvio '%d'", function_name, val_returned);
+      asprintf(&message, "Retornado=%d", val_returned);
     } else {
-      asprintf(&message, "Dado %s(), Esperado=%d, Retornado=%d.", 
-        function_name, val_expected, val_returned);  
+      asprintf(&message, "Esperado=%d, Retornado=%d.", val_expected, val_returned);  
     }
     
     return message;
 }
 
-char* genBoolMsg( const char* function_name, 
-                  const bool val_expected, 
+char* genBoolMsg( const bool val_expected, 
                   const bool val_returned, 
                   const bool debug_mode) {
     /*
         Input:
-            function_name = Nombre de funcion a testear.
             val_expected = Valor (bool) esperado
             val_returned = Valor (bool) retornado por estudiante
             query_mode = Flag para formatear salida
@@ -74,10 +69,9 @@ char* genBoolMsg( const char* function_name,
     char* message;
     
     if (debug_mode) {
-      asprintf(&message, "%s(), devolvio '%s'", function_name, val_returned ? "true" : "false");
+      asprintf(&message, "Retornado=%s", val_returned ? "true" : "false");
     } else {
-      asprintf(&message, "Dado %s(), Esperado=%s, Retornado=%s.", 
-        function_name, val_expected ? "true" : "false", val_returned ? "true" : "false");  
+      asprintf(&message, "Esperado=%s, Retornado=%s.", val_expected ? "true" : "false", val_returned ? "true" : "false");  
     }
     
     return message;
