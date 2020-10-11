@@ -73,5 +73,32 @@ if (CONSULTA) {
         } end
 
     } end
+    
+    describe (genState("Run program2", x_test, y_test, z_test, m_test, CONSULTA)) {
+
+        my_program2(&x_test, &y_test, &z_test, &m_test);
+        program2(&x_student, &y_student, &z_student, &m_student);
+        
+        // Controlo estado final de variable x
+        it (genMsg("x", x_test, y_test, z_test, m_test, x_student, y_student, z_student, m_student, CONSULTA)) {
+            should_int(x_student) be equal to(x_test);
+        } end
+
+        // Controlo estado final de variable y
+        it (genMsg("y", x_test, y_test, z_test, m_test, x_student, y_student, z_student, m_student, CONSULTA)) {
+            should_int(y_student) be equal to(y_test);
+        } end
+
+        // Controlo estado final de variable z
+        it (genMsg("z", x_test, y_test, z_test, m_test, x_student, y_student, z_student, m_student, CONSULTA)) {
+            should_int(z_student) be equal to(z_test);
+        } end
+
+        // Controlo estado final de variable m
+        it (genMsg("m", x_test, y_test, z_test, m_test, x_student, y_student, z_student, m_student, CONSULTA)) {
+            should_int(m_student) be equal to(m_test);
+        } end
+
+    } end
 
 }

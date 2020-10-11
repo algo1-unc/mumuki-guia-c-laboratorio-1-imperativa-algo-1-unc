@@ -48,7 +48,7 @@ char* genMsg(   const char* var_name,
 
     } else {
         asprintf(&message, "chequeo (%s): Esperado(x->%d, y->%d, z->%d, m->%d) | Retornado(x->%d, y->%d, z->%d, m->%d)", 
-            x_test, y_test, z_test, m_test, x_student, y_student, z_student, m_student);  
+            var_name, x_test, y_test, z_test, m_test, x_student, y_student, z_student, m_student);  
     }
     
     return message;
@@ -57,35 +57,15 @@ char* genMsg(   const char* var_name,
 // Funciones para probar pejercicio
 
 void my_program1(int *x0, int *y0, int *z0, int *m0) {
-    int x = *x0;
-    int y = *y0;
-    int z = *z0;
-    int m = *m0;
-  
-    if (x < y) {
-        m = x;
+    if (*x0 < *y0) {
+        *m0 = *x0;
     } else {
-        m = y;
+        *m0 = *y0;
     }
-
-    *x0 = x;
-    *y0 = y;
-    *z0 = z;
-    *m0 = m;
 }
 
 void my_program2(int *x0, int *y0, int *z0, int *m0) {
-    int x = *x0;
-    int y = *y0;
-    int z = *z0;
-    int m = *m0;
-
-    if (m >= z) {
-        m = z;
-    } 
-
-    *x0 = x;
-    *y0 = y;
-    *z0 = z;
-    *m0 = m;
+    if (*m0 >= *z0) {
+        *m0 = *z0;
+    }
 }
