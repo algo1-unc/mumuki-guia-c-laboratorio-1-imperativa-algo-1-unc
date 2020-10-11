@@ -1,9 +1,9 @@
 // Permite intercambiar entre modo testeo y de consulta.
 #define CONSULTA false
 
-// Constantes para valores de estado inicial 
-#define X_VAR ... 
-#define Y_VAR ...
+// Valores de estado inicial para consulta
+#define X_VAR 1
+#define Y_VAR 1
 
 
 void exp_1a(int *x0) {

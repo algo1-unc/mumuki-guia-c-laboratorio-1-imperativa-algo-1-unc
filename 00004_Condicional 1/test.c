@@ -1,5 +1,6 @@
 /*...extra...*/
 
+// Variables para testeo de estados
 int x_student;
 int y_student;
 int x_test;
@@ -7,8 +8,9 @@ int y_test;
 
 
 if (CONSULTA) {
+    // Entorno de prueba que simula scanf() usando *_VAR's
 
-    describe (genState("", X_VAR, Y_VAR, CONSULTA)) {
+    describe (genState("fun", X_VAR, Y_VAR, CONSULTA)) {
         x_student = X_VAR;
         y_student = Y_VAR;
         fun(&x_student, &y_student);
@@ -19,17 +21,17 @@ if (CONSULTA) {
     } end
 
 } else {
-    // Testeo la funcion con estados específicos
+    // Testeo todas las funciones para dos estados especificos
 
-    x_student = 3;
-    y_student = 1;
+    // Estado1 (x->3, y->1)
     x_test = 3;
-    y_test = 1; 
+    y_test = 1;
+    x_student = x_test;
+    y_student = y_test;
 
-    describe (genState("Test1", x_test, y_test, CONSULTA)) {
-        
-        fun(&x_student, &y_student);
+    describe (genState("Test1 fun", x_test, y_test, CONSULTA)) {
         my_fun(&x_test, &y_student);
+        fun(&x_student, &y_student);
         
         // Controlo estado final de variable x
         it (genMsg("x", x_test, y_test, x_student, y_student, CONSULTA)) {
@@ -43,15 +45,15 @@ if (CONSULTA) {
 
     } end
     
-    x_student = -100;
-    y_student = 1;
+    // Estado1 (x->-100, y->1)
     x_test = -100;
-    y_test = 1; 
+    y_test = 1;
+    x_student = x_test;
+    y_student = y_test;
 
-    describe (genState("Test2", x_test, y_test, CONSULTA)) {
-        
-        fun(&x_student, &y_student);
+    describe (genState("Test2 fun", x_test, y_test, CONSULTA)) {
         my_fun(&x_test, &y_student);
+        fun(&x_student, &y_student);
         
         // Controlo estado final de variable x
         it (genMsg("x", x_test, y_test, x_student, y_student, CONSULTA)) {

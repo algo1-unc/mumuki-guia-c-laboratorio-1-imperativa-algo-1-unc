@@ -1,11 +1,11 @@
 // Permite intercambiar entre modo testeo y de consulta.
 #define CONSULTA false
 
-// Constantes para valores de estado inicial 
-#define X_VAR ... 
-#define Y_VAR ...
-#define Z_VAR ...
-#define M_VAR ...
+// Valores de estado inicial para consulta
+#define X_VAR 1
+#define Y_VAR 1
+#define Z_VAR 1
+#define M_VAR 1
 
 
 void program1(int *x0, int *y0, int *z0, int *m0) {

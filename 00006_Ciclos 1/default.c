@@ -1,8 +1,8 @@
 // Permite intercambiar entre modo testeo y de consulta.
 #define CONSULTA false
 
-// Constantes para valores de estado inicial 
-#define I_VAR ...
+// Valores de estado inicial para consulta
+#define I_VAR 1
 
 
 void exp_1h(int *i0) {
