@@ -1,16 +1,13 @@
-Codifique las siguientes funciones en C y encuentre valores para las variables que forman el siguiente estado:
+Codifique las siguientes funciones en C y encuentre valores para las variables del estado inicial:
 
 <img src="https://raw.githubusercontent.com/algo1-unc/mumuki-guia-c-laboratorio-1-imperativa-algo-1-unc/master/assets/2020-10-06-152941_489x36_scrot_1602009145973.png" alt="2020-10-06-152941_489x36_scrot_1602009145973.png" width="auto" height="auto">
 
-de manera tal que las siguientes expresiones, obtengan el valor indicado.
+de manera tal que las siguientes expresiones, obtengan el valor indicado a continuación.
 
 <img src="https://raw.githubusercontent.com/algo1-unc/mumuki-guia-c-laboratorio-1-imperativa-algo-1-unc/master/assets/2020-10-06-152947_448x122_scrot_1602009190502.png" alt="2020-10-06-152947_448x122_scrot_1602009190502.png" width="auto" height="auto">
 
-> **NOTA1:**: "Para declarar un determinado estado inicial `(x->, y->, z->, b->, m->)`, asigne valores a `X_VAR`, `Y_VAR`,`Z_VAR`,`B_VAR` y `M_VAR`".
-
-
-> **NOTA2:**: Recuerde que para probar los resultado de las funciones codificadas en los diferentes estados, debe activar el modo consulta asignando `CONSULTA true` y presionar :arrow_forward:**Enviar**. Una vez concluida su consulta, vuelva a asignar `CONSULTA false` y presione :arrow_forward:**Enviar** para poder testear y completar la tarea correctamente.
-
 **IMPORTANTE!** No modifique el nombre de las funciones de la plantilla presentada.
 
+
+>**NOTA:** Para encontrar y probar diferentes valores, puede nuevamente, simular el comando **scanf()** asignando valores a `*_VAR` y enviando su solución en modo CONSULTA (`CONSULTA true` y presionando :arrow_forward:**Enviar**). Recuerde re-asignar `CONSULTA false` para que al enviar sus soluciones finales el sistema **"pueda corregir y dar por completo el ejercicio"**.
 

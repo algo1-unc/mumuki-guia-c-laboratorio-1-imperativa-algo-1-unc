@@ -1,28 +1,26 @@
-// Permite intercambiar entre modo testeo y de consulta.
+// Permite intercambiar entre modo test y de consulta
 #define CONSULTA false
 
-// Constantes para valores de estados
-#define X_VAR ... 
-#define Y_VAR ...
-#define Z_VAR ...
-#define B_VAR ...
-#define W_VAR ...
+// Valores de estado inicial para consulta
+#define X_VAR 1
+#define Y_VAR 1
+#define Z_VAR 1
+#define B_VAR true
+#define W_VAR true
+
 
 // Funciones para la evaluación de las expresiones
-... exp1(...) {
-  int x = X_VAR; 
+... exp1(... x) {
+
   return ...;
 }
 
-... exp2(...) {
-  ... x = X_VAR;
-  ... y = Y_VAR;
-  ... z = Z_VAR;
+... exp2(... x, ... y, ... z) {
+
   return ...;
 }
 
-... exp3(...) {
-  ... b = B_VAR;
-  ... w = W_VAR;
+... exp3(... b, ... w) {
+  
   return ...;
 }

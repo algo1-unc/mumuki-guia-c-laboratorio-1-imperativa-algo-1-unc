@@ -14,4 +14,4 @@ Codifique sus respectivas funciones en C, para que puedan ser evaluadas en los s
 **IMPORTANTE!** No modifique el nombre de las funciones de la plantilla presentada.
 
 
->**NOTA:** Para simular el comando **scanf()** y probar sus funciones en diferentes estados iniciales `(x->, y->, z->)`, asigne valores a `X_VAR`, `Y_VAR` y `Z_VAR` y envie su solución en modo CONSULTA. Para ello setea `CONSULTA true` y presione :arrow_forward:**Enviar**. Recuerde, que una vez concluida su consulta, debe re-asignar `CONSULTA false` para que al enviar sus soluciones el sistema pueda corregir y dar por correcto el ejercicio.
+>**NOTA:** Para simular el comando **scanf()** y probar sus funciones en diferentes estados iniciales `(x->, y->, z->)`, asigne valores a `X_VAR`, `Y_VAR` y `Z_VAR` y envie su solución en modo CONSULTA. Para ello setea `CONSULTA true` y presione :arrow_forward:**Enviar**. Una vez concluida su consulta, **recuerde**:exclamation: que debe re-asignar `CONSULTA false` para que al enviar sus soluciones el sistema **"pueda corregir y dar por completo el ejercicio"**.

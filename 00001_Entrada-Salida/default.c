@@ -2,9 +2,9 @@
 #define CONSULTA false
 
 // Valores de estado inicial para consulta
-#define X_VAR ... 
-#define Y_VAR ...
-#define Z_VAR ...
+#define X_VAR 1
+#define Y_VAR 1
+#define Z_VAR 1
 
 
 // Funciones para la evaluación de las expresiones
@@ -30,6 +30,5 @@
 
 ... exp5(... x, ... y, ... z) {
     
-  // 
   return ...;
 }

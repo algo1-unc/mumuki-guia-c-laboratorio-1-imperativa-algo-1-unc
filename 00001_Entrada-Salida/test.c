@@ -28,7 +28,7 @@ if (CONSULTA) {
     } end
 
     describe (genState("exp3", X_VAR, Y_VAR, Z_VAR, CONSULTA)) {
-        it (genIntMsg(0, exp3(X_VAR, Y_VAR), CONSULTA)) {
+        it (genBoolMsg(true, exp3(X_VAR, Y_VAR), CONSULTA)) {
             should_bool(false) be equal to(true);
         } end
     } end
@@ -40,7 +40,7 @@ if (CONSULTA) {
     } end
 
     describe (genState("exp5", X_VAR, Y_VAR, Z_VAR, CONSULTA)) {
-        it (genIntMsg(0, exp5(X_VAR, Y_VAR, Z_VAR), CONSULTA)) {
+        it (genBoolMsg(true, exp5(X_VAR, Y_VAR, Z_VAR), CONSULTA)) {
             should_bool(false) be equal to(true);
         } end
     } end
@@ -74,7 +74,7 @@ if (CONSULTA) {
         describe (genState("exp3", x_test, y_test, z_test, CONSULTA)) {
             bool_expected = my_exp3(x_test, y_test);
             bool_student = exp3(x_test, y_test);
-            it (genIntMsg(bool_expected, bool_student, CONSULTA)) {
+            it (genBoolMsg(bool_expected, bool_student, CONSULTA)) {
                 should_bool(bool_student) be equal to(bool_expected);
             } end
         } end
@@ -90,7 +90,7 @@ if (CONSULTA) {
         describe (genState("exp5", x_test, y_test, z_test, CONSULTA)) {
             bool_expected = my_exp5(x_test, y_test, z_test);
             bool_student = exp5(x_test, y_test, z_test);
-            it (genIntMsg(bool_expected, bool_student, CONSULTA)) {
+            it (genBoolMsg(bool_expected, bool_student, CONSULTA)) {
                 should_bool(bool_student) be equal to(bool_expected);
             } end
         } end
@@ -121,7 +121,7 @@ if (CONSULTA) {
         describe (genState("exp3", x_test, y_test, z_test, CONSULTA)) {
             bool_expected = my_exp3(x_test, y_test);
             bool_student = exp3(x_test, y_test);
-            it (genIntMsg(bool_expected, bool_student, CONSULTA)) {
+            it (genBoolMsg(bool_expected, bool_student, CONSULTA)) {
                 should_bool(bool_student) be equal to(bool_expected);
             } end
         } end
@@ -137,7 +137,7 @@ if (CONSULTA) {
         describe (genState("exp5", x_test, y_test, z_test, CONSULTA)) {
             bool_expected = my_exp5(x_test, y_test, z_test);
             bool_student = exp5(x_test, y_test, z_test);
-            it (genIntMsg(bool_expected, bool_student, CONSULTA)) {
+            it (genBoolMsg(bool_expected, bool_student, CONSULTA)) {
                 should_bool(bool_student) be equal to(bool_expected);
             } end
         } end
