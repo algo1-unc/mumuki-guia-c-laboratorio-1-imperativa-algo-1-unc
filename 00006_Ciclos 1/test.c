@@ -65,8 +65,8 @@ if (CONSULTA) {
         i_student = i_test;
 
         describe (genState("exp_1i", i_test, CONSULTA)) {
-            my_exp_1h(&i_test);
-            exp_1h(&i_student);
+            my_exp_1i(&i_test);
+            exp_1i(&i_student);
                 
             it (genMsg("", i_test, i_student, CONSULTA)) {
                 should_int(i_student) be equal to(i_test);
@@ -78,8 +78,8 @@ if (CONSULTA) {
         i_student = i_test;
 
         describe (genState("exp_1i", i_test, CONSULTA)) {
-            my_exp_1h(&i_test);
-            exp_1h(&i_student);
+            my_exp_1i(&i_test);
+            exp_1i(&i_student);
                 
             it (genMsg("", i_test, i_student, CONSULTA)) {
                 should_int(i_student) be equal to(i_test);
