@@ -8,13 +8,13 @@
 
 
 void ciclo1(int *x0, int *y0, int *i0) {
-    int x = *i0;
-    int y = *y0;
-    int i = *i0;
+  int x = *i0;
+  int y = *y0;
+  int i = *i0;
 
-// -> CODIGO AQUI <-
+  // -> CODIGO AQUI <-
 
-    *x0 = x;
-    *y0 = y;
-    *i0 = i;
+  *x0 = x;
+  *y0 = y;
+  *i0 = i;
 }
