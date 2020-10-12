@@ -37,28 +37,28 @@ describe ("Test negativos") {
 
 describe ("Test positivos") {
   
-  it ("Dado hayEscalera(3,4,5), debe devolver 'true'") {
-    should_bool(hayEscalera(3,4,5)) be equal to(true);
+  it ("Dado hayEscalera(1,2,3), debe devolver 'true'") {
+    should_bool(hayEscalera(1,2,3)) be equal to(true);
   } end
 
-  it ("Dado hayEscalera(10,9,8), debe devolver 'true'") {
-    should_bool(hayEscalera(10,9,8)) be equal to(true);
+  it ("Dado hayEscalera(1,3,2), debe devolver 'true'") {
+    should_bool(hayEscalera(1,3,2)) be equal to(true);
   } end
 
-  it ("Dado hayEscalera(11,12,10), debe devolver 'true'") {
-    should_bool(hayEscalera(11,12,10)) be equal to(true);
+  it ("Dado hayEscalera(2,1,3), debe devolver 'true'") {
+    should_bool(hayEscalera(2,1,3)) be equal to(true);
   } end
 
-  it ("Dado hayEscalera(8,6,7), debe devolver 'true'") {
-    should_bool(hayEscalera(8,6,7)) be equal to(true);
+  it ("Dado hayEscalera(3,1,2), debe devolver 'true'") {
+    should_bool(hayEscalera(3,1,2)) be equal to(true);
   } end
 
-  it ("Dado hayEscalera(8,9,7), debe devolver 'true'") {
-    should_bool(hayEscalera(8,9,7)) be equal to(true);
+  it ("Dado hayEscalera(3,2,1), debe devolver 'true'") {
+    should_bool(hayEscalera(3,2,1)) be equal to(true);
   } end
-  
-  it ("Dado hayEscalera(7,9,8), debe devolver 'true'") {
-    should_bool(hayEscalera(7,9,8)) be equal to(true);
+
+  it ("Dado hayEscalera(2,3,1), debe devolver 'true'") {
+    should_bool(hayEscalera(2,3,1)) be equal to(true);
   } end
 
 } end
