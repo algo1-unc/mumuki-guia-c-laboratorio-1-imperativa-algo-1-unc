@@ -56,5 +56,9 @@ describe ("Test positivos") {
   it ("Dado hayEscalera(8,9,7), debe devolver 'true'") {
     should_bool(hayEscalera(8,9,7)) be equal to(true);
   } end
+  
+  it ("Dado hayEscalera(7,9,8), debe devolver 'true'") {
+    should_bool(hayEscalera(7,9,8)) be equal to(true);
+  } end
 
 } end
