@@ -51,7 +51,7 @@ char* genMsg(   const char* var_name,
 
 // Funciones para probar ejercicio
 void my_ciclo1(int *x0, int *y0, int *i0) {
-    int x = *i0;
+    int x = *x0;
     int y = *y0;
     int i = *i0;
 
