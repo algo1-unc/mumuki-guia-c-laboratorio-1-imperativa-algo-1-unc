@@ -41,7 +41,7 @@ char* genMsg(   const char* var_name,
     char* message;
 
     if (query_mode) {
-        asprintf(&message, "SigmaN(x->%d, y->%d, z->%d, m->%d)", 
+        asprintf(&message, "Sigma1(x->%d, y->%d, z->%d, m->%d)", 
             x_student, y_student, z_student, m_student);  
 
     } else {
@@ -60,9 +60,7 @@ void my_program1(int *x0, int *y0, int *z0, int *m0) {
     } else {
         *m0 = *y0;
     }
-}
 
-void my_program2(int *x0, int *y0, int *z0, int *m0) {
     if (*m0 >= *z0) {
         *m0 = *z0;
     }

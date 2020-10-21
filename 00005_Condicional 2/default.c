@@ -21,17 +21,3 @@ void program1(int *x0, int *y0, int *z0, int *m0) {
   *z0 = z;
   *m0 = m;
 }
-
-void program2(int *x0, int *y0, int *z0, int *m0) {
-  int x = *x0;
-  int y = *y0;
-  int z = *z0;
-  int m = *m0;
-  
-  // -> CODIGO AQUI <-
-  
-  *x0 = x;
-  *y0 = y;
-  *z0 = z;
-  *m0 = m;
-}
