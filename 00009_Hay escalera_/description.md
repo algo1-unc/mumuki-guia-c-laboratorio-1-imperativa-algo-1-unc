@@ -18,4 +18,4 @@ Queremos saber si dadas tres cartas de un mazo español (con 8's y 9's), hay una
 > false
 > ```
 
-Programá la función `hayEscalera` que toma como argumentos tres enteros y retorne un booleano.
+Programá la función `hayEscalera` que toma como argumentos tres enteros y retorna un booleano.
