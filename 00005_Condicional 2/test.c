@@ -111,6 +111,7 @@ if (CONSULTA) {
             } end
     
         } end
+    } end
     
     describe ("Testeo de estado 3") {
          // Estado3 (x->10,y->4,z->0,m->1)
