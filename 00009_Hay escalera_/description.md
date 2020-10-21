@@ -1,4 +1,4 @@
-Queremos saber si dadas tres cartas de un mazo español (con 8's y 9's), hay un escalera.
+Queremos saber si dadas tres cartas de un mazo español (con 8's y 9's), hay una escalera.
 
  
 > ```javascript
