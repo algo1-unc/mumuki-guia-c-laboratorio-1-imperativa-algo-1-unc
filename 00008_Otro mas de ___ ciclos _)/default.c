@@ -8,7 +8,7 @@
 
 
 void ciclo2(int *x0, int *i0, bool *res0) {
-  int x = *i0;
+  int x = *x0;
   int i = *i0;
   bool res = *res0;
 

@@ -38,7 +38,7 @@ char* genMsg(   const char* var_name,
     char* message;
 
     if (query_mode) {
-        asprintf(&message, "SigmaN(x->%d, y->%d, i->%d)", 
+        asprintf(&message, "Sigma1(x->%d, y->%d, i->%d)", 
             x_student, y_student, i_student);
 
     } else {

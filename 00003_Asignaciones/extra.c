@@ -50,7 +50,7 @@ char* genMsg(   const char* var_name,
     char* message;
 
     if (query_mode) {
-        asprintf(&message, "SigmaN(x->%d, y->%d)", 
+        asprintf(&message, "Sigma1(x->%d, y->%d)", 
             x_student, y_student);  
 
     } else {

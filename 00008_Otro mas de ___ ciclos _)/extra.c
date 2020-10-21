@@ -40,7 +40,7 @@ char* genMsg(   const char* var_name,
     char* message;
 
     if (query_mode) {
-        asprintf(&message, "SigmaN(x->%d, i->%d, res->%s)", 
+        asprintf(&message, "Sigma1(x->%d, i->%d, res->%s)", 
             x_student, i_student, res_student ? "true" : "false");
 
     } else {
@@ -54,14 +54,14 @@ char* genMsg(   const char* var_name,
 
 // Funciones para probar ejercicio
 void my_ciclo2(int *x0, int *i0, bool *res0) {
-    int x = *i0;
+    int x = *x0;
     int i = *i0;
     bool res = *res0;
 
     i = 2;
     res = true;
 
-    while (i <= x && res) {
+    while (i < x && res) {
         res = res && (x % i != 0);
         i = i + 1;
     }

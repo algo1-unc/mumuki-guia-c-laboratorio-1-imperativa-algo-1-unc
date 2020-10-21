@@ -1,7 +1,7 @@
 * 1) Traduzca a lenguaje C los siguientes programas escritos en pseudocódigo:
 
 
-<img src="https://raw.githubusercontent.com/algo1-unc/mumuki-guia-c-laboratorio-1-imperativa-algo-1-unc/master/assets/2020-10-06-002613_754x147_scrot_1602341264532.png" alt="2020-10-06-002613_754x147_scrot_1602341264532.png" width=100% >
+<img src="https://raw.githubusercontent.com/algo1-unc/mumuki-guia-c-laboratorio-1-imperativa-algo-1-unc/master/assets/2020-10-06-002613_754x147_scrot_1603320105074.png" alt="2020-10-06-002613_754x147_scrot_1603320105074.png" width=100%>
 
 
 * 2)  Complete la siguiente tabla para diferentes estados iniciales. Para ello, haga uso del modo **CONSULTA**.

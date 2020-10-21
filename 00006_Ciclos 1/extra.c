@@ -37,7 +37,7 @@ char* genMsg(   const char* var_name,
     char* message;
 
     if (query_mode) {
-        asprintf(&message, "SigmaN(x->%d)", i_student);  
+        asprintf(&message, "Sigma1(i->%d)", i_student);  
 
     } else {
         asprintf(&message, "chequeo (%s): Esperado(i->%d) | Retornado(i->%d)", var_name, i_test, i_student);  
