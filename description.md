@@ -25,6 +25,16 @@ Para compilar para **gdb**, agregar el flag **-g** al momento de compilar el .c 
 
 ```
 $> gcc -Wall -Wextra -std=c99 -g miarchivo.c -o miprograma
+$> gdb miprograma
+Setear breakpoints (puntos de cortes) - Ej linea 5 y linea 15
+$> b 5
+$> b 15
+Empezar a ejecutar el programa
+$> run
+Ver estado de variables
+$> display var
+Continuar hasta el siguiente breakpoint 
+$> c
 ```
 
 
