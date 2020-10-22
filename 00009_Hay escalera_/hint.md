@@ -1,1 +1,1 @@
-:memo: Asumí que los valores de las cartas serán del 1 al 12 y que puede haber escalera aunque sean de diferente **palo**.
+:memo: Asumí que los valores de las cartas serán del **1 al 12** (sin comodín), y que son de igual **palo**.

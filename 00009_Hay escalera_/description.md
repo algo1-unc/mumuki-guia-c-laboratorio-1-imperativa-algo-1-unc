@@ -1,4 +1,8 @@
-Queremos saber si dadas tres cartas de un mazo español (con 8's y 9's), hay una escalera.
+**Hay una escalera :thinking: ?**
+
+<img src="https://raw.githubusercontent.com/algo1-unc/mumuki-guia-c-laboratorio-1-imperativa-algo-1-unc/master/assets/escalera_1603324853181.png" alt="escalera_1603324853181.png" width="auto" height="auto">
+
+* Queremos saber si dadas tres cartas de un mazo español (**con 8's y 9's**), forman una escalera.
 
  
 > ```javascript
@@ -18,4 +22,4 @@ Queremos saber si dadas tres cartas de un mazo español (con 8's y 9's), hay una
 > false
 > ```
 
-Programá la función `hayEscalera` que toma como argumentos tres enteros y retorna un booleano.
+**Programá** la función `hayEscalera` que toma como argumentos tres enteros y retorna un booleano.
