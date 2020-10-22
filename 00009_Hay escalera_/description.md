@@ -22,4 +22,4 @@
 > false
 > ```
 
-**Programá** la función `hayEscalera` que toma como argumentos tres enteros y retorna un booleano.
+* **Programá** la función `hayEscalera`, que toma tres enteros y retorna un booleano.
